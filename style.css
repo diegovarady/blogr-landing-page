@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mobileMenu {
+    position: relative;    
+    height: 3.25rem;
+    width: 4rem;
+    cursor: pointer;
+    transition: transform 0.25s;
+}
+
+.mobileMenu::before,
+.mobileMenu::after {
+    content: "";
+    display: block;
+}
+
+.mobileMenu::before,
+.mobileMenu::after,
+.line {
+    position: absolute;
+    background: black;
+    width: 100%;
+    height: 8px;
+}
+
+.mobileMenu::after {
+    top: 0;
+}
+
+.line {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.mobileMenu::before {
+    bottom: 0;
+}
+
+.mobileMenu.active {
+    transform: rotate(180deg);
+}
+
+.mobileMenu.active .line {
+    display: none;
+}
+
+.mobileMenu.active::before {
+    bottom: 50%;
+    transform: translateY(50%) rotate(45deg);
+}
+
+.mobileMenu.active::after {
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+.menu {
+    display: none;
+}
+
+.menu.active {
+    display: block;
+}
+
+.attribution {
+    font-size: 11px; text-align: center;
+    color: hsl(228, 45%, 44%);
+}
