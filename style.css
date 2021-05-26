@@ -4,6 +4,25 @@
     box-sizing: border-box;
 }
 
+body {
+    --header-bg-color : hsl(356, 100%, 66%);
+    --hover-bg-color: hsl(355, 100%, 74%);
+    --headings-color: hsl(208, 49%, 24%);
+    --white-text-color: hsl(0, 0%, 100%);
+    --grey-text-color: hsl(240, 2%, 79%);
+    --body-text-color: hsl(207, 13%, 34%);
+    --footer-bg-color: hsl(240, 10%, 16%);
+    /*Gradients*/
+    /*Header*/
+    --gradient-color-red1: hsl(13, 100%, 72%);
+    --gradient-color-red2: hsl(353, 100%, 62%);
+    /*Body*/
+    --gradient-color-blue1: hsl(237, 17%, 21%);
+    --gradient-color-blue2: hsl(237, 23%, 32%);
+    /*Sizes*/
+    --body-size: 16px;
+}
+
 .mobileMenu {
     position: relative;    
     height: 3.25rem;
