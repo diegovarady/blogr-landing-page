@@ -29,6 +29,15 @@ body {
     --ubuntu: 'Ubuntu', sans-serif;
 }
 
+header {
+    background-image: url(images/bg-pattern-intro.svg), linear-gradient(to bottom right, var(--gradient-color-red1), var(--gradient-color-red2) 70%);    
+    background-repeat: no-repeat;
+    background-size: 300%;
+    background-position: 36% 35%;    
+    height: 480px;
+    border-radius: 0 0 0 80px;
+}
+
 .mobileMenu {
     position: relative;    
     height: 3.25rem;
