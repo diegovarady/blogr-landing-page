@@ -26,7 +26,7 @@ body {
     --body-size: 16px;
     /*Fonts*/
     --overpass: 'Overpass', sans-serif;
-    --ubuntu: 'Ubuntu', sans-serif;
+    --ubuntu: 'Ubuntu', sans-serif;    
     font-family: var(--overpass);
     text-align: center;
 }
@@ -54,6 +54,33 @@ header {
 
 .content-header {
     padding: 5rem 1rem;
+}
+
+.content-header h1, .content-header p {
+    margin-bottom: 1rem;;
+}
+
+.content-header p {
+    padding: 0 0.75rem;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    padding: 1.5rem 0;
+}
+
+button {    
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    border: 1px solid var(--white-text-color);
+    background-color: transparent;
+    font-size: var(--body-size);
+    font-family: var(--overpass);
+    font-weight: 600;
+    color: var(--white-text-color);
+    cursor: pointer;    
 }
 
 .mobileMenu {
